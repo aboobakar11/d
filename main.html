@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Магазин электроники</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>TechStore</span>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="#categories"><i class="fas fa-list"></i> Категории</a></li>
+                    <li><a href="#products"><i class="fas fa-mobile-alt"></i> Товары</a></li>
+                    <li><a href="#"><i class="fas fa-percent"></i> Акции</a></li>
+                    <li><a href="#"><i class="fas fa-phone-alt"></i> Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-cart">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Поиск товаров...">
+                    </div>
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Техника будущего уже сегодня</h1>
+            <p>Лучшие гаджеты, электроника и аксессуары по доступным ценам. Бесплатная доставка по всей стране!</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn">Каталог товаров</a>
+                <a href="#" class="btn btn-outline">Акции недели</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Категории товаров -->
+    <section id="categories">
+        <h2 class="section-title">Популярные категории</h2>
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-img">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="category-content">
+                    <h3>Смартфоны</h3>
+                    <p>Лучшие модели 2023 года</p>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-img">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div class="category-content">
+                    <h3>Ноутбуки</h3>
+                    <p>Для работы и развлечений</p>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-img">
+                    <i class="fas fa-tablet-alt"></i>
+                </div>
+                <div class="category-content">
+                    <h3>Планшеты</h3>
+                    <p>Удобство в ваших руках</p>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-img">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <div class="category-content">
+                    <h3>Аксессуары</h3>
+                    <p>Для ваших устройств</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Товары -->
+    <section id="products">
+        <h2 class="section-title">Популярные товары</h2>
+        <div class="products">
+            <!-- Товар 1 -->
+            <div class="product-card">
+                <span class="product-badge">Хит</span>
+                <div class="product-img">
+                    <i class="fas fa-mobile-alt" style="font-size: 5rem; color: #3498db;"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Смартфон iPhone 14 Pro</h3>
+                    <p class="product-description">Новый флагман от Apple с революционной камерой и мощным процессором.</p>
+                    <div class="product-meta">
+                        <div>
+                            <div class="product-price">89 990 ₽</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(147)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Товар 2 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <i class="fas fa-laptop" style="font-size: 5rem; color: #3498db;"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Ноутбук MacBook Pro 16"</h3>
+                    <p class="product-description">Мощный ноутбук для профессионалов с дисплеем Liquid Retina XDR.</p>
+                    <div class="product-meta">
+                        <div>
+                            <div class="product-price">199 990 ₽</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(89)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Товар 3 -->
+            <div class="product-card">
+                <span class="product-badge">Новинка</span>
+                <div class="product-img">
+                    <i class="fas fa-tablet-alt" style="font-size: 5rem; color: #3498db;"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Планшет Samsung Galaxy Tab S8</h3>
+                    <p class="product-description">Мощный планшет с S-Pen в комплекте для творчества и работы.</p>
+                    <div class="product-meta">
+                        <div>
+                            <div class="product-price">74 990 ₽</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(63)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Товар 4 -->
+            <div class="product-card">
+                <span class="product-badge">Скидка 15%</span>
+                <div class="product-img">
+                    <i class="fas fa-headphones" style="font-size: 5rem; color: #3498db;"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Наушники Sony WH-1000XM5</h3>
+                    <p class="product-description">Флагманские беспроводные наушники с продвинутым шумоподавлением.</p>
+                    <div class="product-meta">
+                        <div>
+                            <div class="product-price">34 990 ₽</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(214)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Товар 5 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <i class="fas fa-smartwatch" style="font-size: 5rem; color: #3498db;"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Apple Watch Series 8</h3>
+                    <p class="product-description">Умные часы с отслеживанием здоровья и уведомлениями.</p>
+                    <div class="product-meta">
+                        <div>
+                            <div class="product-price">39 990 ₽</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(98)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Товар 6 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <i class="fas fa-camera" style="font-size: 5rem; color: #3498db;"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Фотоаппарат Sony Alpha A7 IV</h3>
+                    <p class="product-description">Полнокадровая беззеркальная камера для профессионалов.</p>
+                    <div class="product-meta">
+                        <div>
+                            <div class="product-price">189 990 ₽</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(57)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="features-container">
+            <div class="feature">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Быстрая доставка</h3>
+                <p>Доставим заказ в любой город России за 1-3 дня</p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Гарантия качества</h3>
+                <p>Официальная гарантия на все товары до 2 лет</p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-undo"></i>
+                <h3>Легкий возврат</h3>
+                <p>Возврат товара в течение 14 дней без вопросов</p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h3>Поддержка 24/7</h3>
+                <p>Наши менеджеры всегда готовы помочь вам</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="newsletter">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Получайте первыми информацию о скидках, акциях и новинках</p>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Ваш email" required>
+            <button type="submit">Подписаться</button>
+        </form>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>О магазине</h3>
+                <p>TechStore - интернет-магазин электроники и гаджетов. Мы предлагаем только качественные товары от ведущих мировых брендов.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Категории</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Смартфоны</a></li>
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Планшеты</a></li>
+                    <li><a href="#">Наушники</a></li>
+                    <li><a href="#">Умные часы</a></li>
+                    <li><a href="#">Фототехника</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Помощь</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Возврат товара</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Статус заказа</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Контакты</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Москва, ул. Тверская, д. 10</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>8 (800) 555-35-35</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@techstore.ru</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-20:00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 TechStore - Интернет-магазин электроники. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
